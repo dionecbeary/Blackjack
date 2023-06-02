@@ -3,61 +3,78 @@ public class Card {
     public int value;
     public String name;
     public boolean isDealt;
-    public Card(int pSuit, int pName){
-        if(pSuit == 0){
+
+
+    public Card(int pSuit, int pName) {
+        if (pSuit == 1) {
             suit = "Diamond";
         }
-        if(pSuit == 1){
+        if (pSuit == 2) {
             suit = "Club";
         }
-        if(pSuit == 2){
+        if (pSuit == 3) {
             suit = "Heart";
         }
-        if(pSuit == 3){
+        if (pSuit == 4) {
             suit = "Spade";
         }
-        if(pName == 0){
-            value = 1;
+        switch (pName) {
+            case 1:
+                name = "Ace";
+                value = 11;
+                break;
+            case 2:
+                name = "2";
+                value = 2;
+                break;
+            case 3:
+                name = "3";
+                value = 3;
+                break;
+            case 4:
+                name = "4";
+                value = 4;
+                break;
+            case 5:
+                name = "5";
+                value = 5;
+                break;
+            case 6:
+                name = "6";
+                value = 6;
+                break;
+            case 7:
+                name = "7";
+                value = 7;
+                break;
+            case 8:
+                name = "8";
+                value = 8;
+                break;
+            case 9:
+                name = "9";
+                value = 9;
+                break;
+            case 10:
+                name = "10";
+                value = 10;
+                break;
+            case 11:
+                name = "Jack";
+                value = 10;
+                break;
+            case 12:
+                name = "Queen";
+                value = 10;
+                break;
+            case 13:
+                name = "King";
+                value = 10;
+                break;
         }
-        if(pName == 1){
-            value = 2;
-        }
-        if(pName == 2){
-            value = 3;
-        }
-        if(pName == 3){
-            value = 4;
-        }
-        if(pName == 4){
-            value = 5;
-        }
-        if(pName == 5){
-            value = 6;
-        }
-        if(pName == 6){
-            value = 7;
-        }
-        if(pName == 7){
-            value = 8;
-        }
-        if(pName == 8){
-            value = 9;
-        }
-        if(pName == 9){
-            value = 10;
-        }
-        if(pName == 10){
-            value = 10;
-        }
-        if(pName == 11){
-            value = 10;
-        }
-        if(pName == 12){
-            value = 10;
-        }
-        if(pName == 13){
-            value = 10;
-        }
+        System.out.println(name+" of "+suit);
+    }
+    public void shuffle(){
 
     }
 }
