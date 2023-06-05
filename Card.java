@@ -74,7 +74,4 @@ public class Card {
         }
         System.out.println(name+" of "+suit);
     }
-    public void shuffle(){
-
-    }
 }
